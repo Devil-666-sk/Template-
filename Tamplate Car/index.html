@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        overflow-x: hidden;
+        background-color: whitesmoke;
+      }
+      .container1 {
+        background-color: orange;
+        height: 60%;
+        width: 16%;
+        color: antiquewhite;
+        border-radius: 10px 0px 0px 10px;
+        padding: 2%;
+      }
+      .container2 {
+        background-color: rgb(15, 120, 190);
+        height: 60%;
+        width: 16%;
+        padding: 2%;
+        color: antiquewhite;
+      }
+      .container3 {
+        background-color: rgb(4, 31, 105);
+        height: 60%;
+        width: 16%;
+        padding: 2%;
+        color: antiquewhite;
+        border-radius: 0px 10px 10px 0px;
+      }
+      .btn1 {
+        background-color: white;
+        color: orange;
+        border-radius: 20px;
+        height: 35px;
+        width: 100px;
+        margin-top: 25px;
+      }
+      .btn2 {
+        background-color: white;
+        color: rgb(15, 120, 190);
+        border-radius: 20px;
+        height: 35px;
+        width: 100px;
+        margin-top: 25px;
+      }
+      .btn3 {
+        background-color: white;
+        color: rgb(4, 31, 105);
+        border-radius: 20px;
+        height: 35px;
+        width: 100px;
+        margin-top: 25px;
+      }
+      @media only screen and (max-width: 768px) {
+        body {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          height: 100vh;
+          margin-top: 80%;
+          margin-bottom: 130%;
+          overflow-x: hidden;
+          padding: 5%;
+          align-items: center;
+          justify-items: center;
+        }
+        .container1 {
+          width: 50%;
+          margin-top: 50%;
+          padding: 40px;
+          border-radius: 10px 10px 0px 0px;
+        }
+        .container2 {
+          width: 50%;
+          padding: 40px;
+        }
+        .container3 {
+          width: 50%;
+          padding: 40px;
+          border-radius: 0px 0px 10px 10px;
+        }
+        .btn1 {
+          margin-bottom: 10px;
+        }
+        .btn2 {
+          margin-bottom: 10px;
+        }
+        .btn3 {
+          margin-bottom: 10px;
+        }
+      }
+      @media only screen and (max-width: 992px) {
+        body {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          height: 100vh;
+          margin-top: 80%;
+          margin-bottom: 130%;
+          gap: 20px;
+          overflow-x: hidden;
+          padding: 5%;
+          align-items: center;
+          justify-items: center;
+        }
+        .container1 {
+          width: 50%;
+          margin-top: 50%;
+          padding: 40px;
+          border-radius: 10px 10px 0px 0px;
+        }
+        .container2 {
+          width: 50%;
+          padding: 40px;
+        }
+        .container3 {
+          width: 50%;
+          padding: 40px;
+          border-radius: 0px 0px 10px 10px;
+        }
+        .btn1 {
+          margin-bottom: 10px;
+        }
+        .btn2 {
+          margin-bottom: 10px;
+        }
+        .btn3 {
+          margin-bottom: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container1">
+      <img src="./icon-sedans.svg" alt="sedan" />
+      <h1 class="heading1">SEDANS</h1>
+      <p class="sedan">
+        Choose a sedan for its affordability and excellent fuel economy. Ideal
+        for cruising in the city or on your next road trip.
+      </p>
+      <button type="button" class="btn1">Learn More</button>
+    </div>
+    <div class="container2">
+      <img src="./icon-suvs.svg" alt="suvs" />
+      <h1 class="heading2">SUVS</h1>
+      <p class="suv">
+        Take an SUV for its spacious interior, power, and versatility. Perfect
+        for your next family vacation and off-road adventures.
+      </p>
+      <button type="button" class="btn2">Learn More</button>
+    </div>
+    <div class="container3">
+      <img src="./icon-luxury.svg" alt="luxury" />
+      <h1 class="heading3">LUXURY</h1>
+      <p class="luxury">
+        Cruise in the best car brands without the bloated prices. Enjoy the
+        enhanced comfort of a luxury rental and arrive in style.
+      </p>
+      <button type="button" class="btn3">Learn More</button>
+    </div>
+  </body>
+</html>

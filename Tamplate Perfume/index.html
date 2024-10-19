@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        overflow-x: hidden;
+        background-color: antiquewhite;
+      }
+
+      .container {
+        height: 430px;
+        width: 500px;
+        display: flex;
+      }
+
+      .child1 {
+        align-items: center;
+        display: flex;
+        width: 50%;
+      }
+
+      .child1 img {
+        height: 430px;
+        width: 250px;
+        border-radius: 20px 0px 0px 20px;
+      }
+
+      .child2 {
+        width: 50%;
+        padding: 0px 2% 2% 2%;
+        background-color: white;
+        border-radius: 0px 20px 20px 0px;
+      }
+
+      .new {
+        color: rgb(5, 71, 5);
+        font-size: 35px;
+      }
+      .old {
+        text-decoration-line: line-through;
+        font-size: small;
+        color: black;
+      }
+      button {
+        background-color: rgb(5, 71, 5);
+        text-align: center;
+        border-radius: 10px;
+        height: 40px;
+        width: 220px;
+        color: aliceblue;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .container {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          margin-top: 40%;
+          padding: 35%;
+          align-items: center;
+          justify-content: center;
+          line-height: 1;
+
+          .child1 {
+            display: flex;
+            flex-direction: column;
+            height: 270px;
+          }
+          .child1 img {
+            border-radius: 20px 20px 0px 0px;
+          }
+          .child2 {
+            display: flex;
+            flex-direction: column;
+            height: 450px;
+            width: 239px;
+            border-radius: 0px 0px 20px 20px;
+            padding-bottom: 10px;
+            line-height: 1;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="child1">
+        <img src="./image-product-desktop.jpg" alt="image-product-desktop" />
+      </div>
+      <div class="child2">
+        <h5>Perfume</h5>
+        <h1>Gabrielle Essence Eau De Parfum</h1>
+        <p>
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <p class="new">$149.99 <span class="old">$169.99</span></p>
+
+        <button type="button">Add to Cart</button>
+      </div>
+    </div>
+  </body>
+</html>
